@@ -1,0 +1,26 @@
+@import "dropdown";
+@import "fullscrollAnimate";
+@import "accordion";
+@import "arrow";
+@import "slick";
+@import "textslide";
+
+
+//js用のscss
+@import "js/slick";
+@import "js/slick-theme";
+
+
+//block
+.namespae-block{
+  max-width: 1280px;
+  min-width: 787px;
+  margin: 0 auto;
+}
+
+.namespace-Main{
+  width: 1680px;
+  min-width: 1020px;
+  margin: 0 auto;
+  background-color: #00a0d2;
+}
