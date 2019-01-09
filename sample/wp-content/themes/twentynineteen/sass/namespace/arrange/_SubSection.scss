@@ -1,0 +1,34 @@
+.cstomLyout-SubSection{
+  position: relative;
+}
+.cstomLyout-SubSection_Header{
+  max-width: 980px;
+}
+.cstomLyout-SubSection_Header-content1{
+  position: absolute;
+  top: -320px;
+  right: 0;
+}
+.cstomLyout-SubSection_Header-content2{
+  position: absolute;
+  top: 0;
+  right: 200px;
+}
+.cstomLyout-SubSection_Title{
+  @include font-size(56 / 16);
+}
+.cstomLyout-Subsection_TitleDscript{
+  @include font-size(28 / 16);
+}
+.cstomLyout-SubSection_Content{
+  padding: 0 0 0 350px;
+  text-align: center;
+}
+.cstomLyout-SubSection_Content-1{
+  padding: 50px 0 50px 350px;
+
+}
+.cstomLyout-SubSection_Content-2{
+  padding: 300px 0 50px 350px;
+
+}
