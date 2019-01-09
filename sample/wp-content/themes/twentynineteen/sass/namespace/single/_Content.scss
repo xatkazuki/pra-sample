@@ -1,0 +1,35 @@
+.sngLyout-Content-max {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.sngLyout-Content{
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.sngLyout-Content_Inner{
+  @include clearfix();
+  max-width: 980px;
+  margin: 0 auto;
+}
+.sngLyout-Content_Body{
+  width: 540px;
+}
+.sngLyout-Content_Body-newsList{
+
+}
+.sngLyout-Content_Img{
+  width: 440px;
+  height: 250px;
+  background-color: $color__sky-blue;
+
+}
+.sngLyout-Content-right{
+  float: right;
+}
+.sngLyout-Content-left{
+  float: left;
+}
+.sngLyout-Content-center{
+  text-align: center;
+  width: 100%!important;
+}
