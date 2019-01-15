@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The template for displaying all single posts
@@ -31,7 +32,7 @@ get_header();
 //			endwhile; // End of the loop.
 //			?>
 
-			<header class="entry-header namespae-block">
+			<header class="entry-header namespace-block">
 				<?php
 				if ( is_sticky() && is_home() && ! is_paged() ) {
 					printf( '<span class="sticky-post">%s</span>', _x( 'Featured', 'post', 'twentynineteen' ) );
@@ -46,7 +47,7 @@ get_header();
 
 			<div>
 
-				<h3 class="namespae-block">	コンテンツ１- プルダウン-</h3>
+				<h3 id="top" class="namespace-block">	コンテンツ１- プルダウン-</h3>
 				<div>
 					<ul class="dropdown">
 						<li><a href="#">テキスト1</a></li>
@@ -71,8 +72,9 @@ get_header();
 
 				<hr>
 
-				<div class="namespae-block">
-					<h3>コンテンツ2 -横からのスライド -</h3>
+				<div id="textslide" class="namespace-block">
+					<h3>コンテンツ2 -横からのスライド -<i class="fa fa-angle-up" aria-hidden="true"></i></h3>
+					<!--  cssのみでanimationを実装　-->
 					<p class="text-slide_FromRight">
 						本文２、本文２、本文２、本文２、本文２、本文２<br>
 						本文２、本文２、本文２、本文２、本文２、本文２<br>
@@ -90,18 +92,20 @@ get_header();
 
 				<hr>
 
-				<div class="namespae-block">
+				<div class="namespace-block">
 					<h3 class="arrow-delta-title">コンテンツ3 -下つき三角を簡単なcssで表現 -</h3>
 					<p>本文３　本文３　本文３　本文３</p>
-					<figure><img src="" alt="image画像"></figure>
+					<figure><img src="<?php bloginfo('template_directory');?>/images/walk-640.jpg" alt="image画像"></figure>
 				</div>
 
 				<hr>
 
-				<div class="namespae-block">
+				<div id="accordion" class="namespace-block">
 					<h3>アコーディオン</h3>
 
-					<span class="accordion-open">コンテンツ4- アコーディオン - (開く)</span>
+					<!--  javascriptのみで実装 (jQueryの読み込みはしていない)　-->
+
+					<span class="accordion-open">コンテンツ4- アコーディオン - <i class="fas fa-arrow-circle-down"></i><small>(開く)</small></span>
 
 					<div class="accordion-content">
 						<ul>
@@ -128,7 +132,7 @@ get_header();
 							</li>
 						</ul>
 
-						<small class="accordion-close">閉じるx</small>
+						<small class="accordion-close">閉じる<i class="fas fa-times-circle"></i></small>
 					</div>
 				</div>
 
@@ -163,10 +167,15 @@ get_header();
 
 				<hr>
 
-				<div class="animate-on-70 namespae-block">
+				<div class="animate-on-70 namespace-block">
 					<h3>コンテンツ５ -ふわっと浮き出る - </h3>
+
+					<!--
+						function.phpでjQueryを読み込み、javascriptを作成
+					　-->
+
 					<p class="">本文4、本文4、本文4、本文4、本文4、本文4、</p>
-					<figure><img src="" alt="image画像"></figure>
+					<figure><img src="<?php bloginfo('template_directory');?>/images/tea-plantation-640.jpg" alt="image画像"></figure>
 					<p>本文5、本文5、本文5、本文5、本文5、本文5、</p>
 				</div>
 
@@ -193,17 +202,68 @@ get_header();
 
 				<hr>
 
-				<div class="namespae-block">
+				<div id="modal" class="namespace-block">
 					<h3>コンテンツ６-モーダル - </h3>
 					<p>モーダルを実装</p>
+
+					<!--
+						参考：http://bashalog.c-brains.jp/17/02/28-103000.php
+								 https://on-ze.com/archives/6971
+					 -->
+
+					<script>
+						(function($){
+
+							// モーダルのデフォルト設定を変更する
+							$.fn.modaal.options.overlay_opacity = 0.6;
+						})(jQuery);
+					</script>
+
+					<a class="recommend-Anchor modaal"  href="#modal-Recommend"
+						 data-modaal-custom-class="modal-Recommend"
+						 data-modaal-width="540">
+						モーダル表示（売るなら今です）
+					</a>
+					<div id="modal-Recommend" class="modal-Template">
+						<div class="modal-Recommend_Header">
+							<p class="modal-Recommend_HeaderText">売るなら今です！</p>
+						</div>
+
+						<div class="modal-Recommend_Content">
+							<p class="modal-Recommend_Text modal-Recommend_Text-1">
+								フィギュアの価格は、発売後、<br>
+								毎週値下がりしてしまいます。<br>
+								今が最高値の可能性が高いです。<br>
+								<span class="modal-Recommend_Text-emphasis">売るなら今です！</span><br>
+							</p>
+							<p class="modal-Recommend_Text modal-Recommend_Text-2">ぜひこのまま<br>買取お申し込みにお進みください。</p>
+						</div>
+
+						<div class="form-Submit modal-Recommend_Submit">
+							<button type="submit" class="btn btn-block form-Button">
+								<i class="fas fa-chevron-circle-left form-Button_Icon form-Button_Icon-prev"></i>
+								申込に戻る
+							</button>
+						</div>
+					</div><!--モダール表示　（売るなら今です）ここまで-->
+
+					<script>
+						$(document).separationPopup();
+					</script>
+
 				</div>
 
 				<hr>
 
-				<div class="namespae-block">
-					<h3 class="">
+				<div id="slick" class="namespace-block">
+					<h3>
 						slickを実装
 					</h3>
+
+					<!--
+          	function.phpでjQuery,ダウンロードしたslickのjsファイルとcssファイル(_slick.scssと_slick-theme.scss)を読み込みをした上で、カスタマイズ
+          	http://kenwheeler.github.io/slick/
+        　-->
 
 					<ul class="slick_List">
 						<li>
@@ -262,6 +322,76 @@ get_header();
 					});
 				</script>
 
+				<section class="top-MainImage">
+
+					<ul>
+						<li>
+							<img src="<?php echo get_theme_file_uri('images/dirt-road-1280.jpg')?>" alt="">
+						</li>
+						<li>
+							<img src="<?php echo get_theme_file_uri('images/sunrise-1280.jpg')?>" alt="">
+						</li>
+						<li>
+							<img src="<?php echo get_theme_file_uri('images/dirt-road-1920.jpg')?>" alt="">
+						</li>
+						<li>
+							<img src="<?php echo get_theme_file_uri('images/snowman-1920.jpg')?>" alt="">
+						</li>
+						<li>
+							<img src="<?php echo get_theme_file_uri('images/road-1920.jpg')?>" alt="">
+						</li>
+					</ul>
+					<script>
+						jQuery(function($){
+							$('.top-MainImage ul').slick({
+								autoplay: true,
+								arrows: false,
+								fade: true
+							});
+						});
+					</script>
+
+				</section><!-- /.top-MainImage-->
+
+
+				<div>
+
+					スマートスクロール
+
+					<script>
+						$(function(){
+							// #で始まるリンクをクリックしたら実行されます
+							$('a[href^="#"]').click(function() {
+								// スクロールの速度
+								var speed = 400; // ミリ秒で記述
+								var href= $(this).attr("href");
+								var target = $(href == "#" || href == "" ? 'html' : href);
+								var position = target.offset().top;
+								$('body,html').animate({scrollTop:position}, speed, 'swing');
+								return false;
+							});
+						});
+//					</script>
+
+					<ul>
+						<li>
+							<a href="#top">topへ戻る</a>
+						</li>
+						<li>
+							<a href="#textslide">横からのスライドへ</a>
+						</li>
+						<li>
+							<a href="#accordion">アコーディオンへ</a>
+						</li>
+						<li>
+							<a href="#modal">モーダルへ</a>
+						</li>
+						<li>
+							<a href="#slick">slickへ</a>
+						</li>
+					</ul>
+
+				</div>
 
 			</div>
 

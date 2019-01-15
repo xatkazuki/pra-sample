@@ -4,7 +4,13 @@
 @import "arrow";
 @import "slick";
 @import "textslide";
+@import "modal";
 
+
+@import "arrange/cstomLyout";
+@import "single/sngLyout";
+@import "flex/flex";
+@import "works/works";
 
 //js用のscss
 @import "js/slick";
@@ -12,15 +18,22 @@
 
 
 //block
-.namespae-block{
-  max-width: 1280px;
+.namespace-block{
+  max-width: 1020px;
   min-width: 787px;
   margin: 0 auto;
 }
 
 .namespace-Main{
-  width: 1680px;
+  max-width: 1280px;
   min-width: 1020px;
   margin: 0 auto;
-  background-color: #00a0d2;
+  //background-color: #00a0d2;
+}
+
+.namespace-Main-cstomLyout{
+  position: relative;
+  //overflow: hidden;
+  word-break: break-all;
+
 }

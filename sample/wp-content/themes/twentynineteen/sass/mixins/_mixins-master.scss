@@ -67,12 +67,12 @@
 @mixin post-section-dash {
 
 	&:before {
-		background: $color__text-light;
-		content: "\020";
-		display: block;
-		height: 2px;
-		margin: $size__spacing-unit 0;
-		width: 1em;
+		//background: $color__text-light;
+		//content: "\020";
+		//display: block;
+		//height: 2px;
+		//margin: $size__spacing-unit 0;
+		//width: 1em;
 	}
 }
 
@@ -156,7 +156,9 @@
 
 	/* Japanese */
 	html[lang="ja"] #{$wrapper_classname} * {
-	  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", Meiryo, "Helvetica Neue", sans-serif !important;
+	  //font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", Meiryo, "Helvetica Neue", sans-serif !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", Meiryo, "Helvetica Neue" ,"Font Awesome 5 Free", sans-serif;
+
 	}
 
 	/* Korean */
