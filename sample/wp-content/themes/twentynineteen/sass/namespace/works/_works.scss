@@ -12,20 +12,23 @@
   border-bottom: #000 3px solid;
 }
 .home-Works_Header{
-
+  padding: 50px 0;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
 }
 .home-Works_HeaderTitle{
   //@include font-poppins-bold();
   @include font-size( 31/ 16);
-  color:#000;
+  color:#ffffff;
 }
 .home-Works_List{
   //@include clearfix();
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 70px 0 0;
+  width: 980px;
+  margin: 70px auto 0;
   list-style-type: none;
   //@include media-query('sp'){
   //  margin: 0;

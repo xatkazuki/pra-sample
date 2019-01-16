@@ -46,7 +46,6 @@
 <header>
 			<div class="site-branding-container">
 				<?php get_template_part( 'template-parts/header/site', 'branding' ); ?>
-				<i class="fa fa-wordpress"></i>
 			</div><!-- .layout-wrap -->
 
 <!--			--><?php //if ( is_singular() && twentynineteen_can_show_post_thumbnail() ) : ?>
