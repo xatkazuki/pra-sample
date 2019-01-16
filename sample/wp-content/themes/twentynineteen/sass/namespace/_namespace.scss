@@ -11,6 +11,8 @@
 @import "single/sngLyout";
 @import "flex/flex";
 @import "works/works";
+@import "fullpagescroll/fullpagescroll";
+@import "panel/panel";
 
 //js用のscss
 @import "js/slick";
@@ -36,4 +38,33 @@
   //overflow: hidden;
   word-break: break-all;
 
+}
+
+
+
+#fadeInFix_AnchorTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  //@include media-query('sp'){
+  //  display: none;
+  //}
+}
+#fadeInFix_AnchorTopButton a {
+  //background: #666;
+  display: block;
+  width: 100px;
+  padding: 0px 0;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  @include font-size(12 / 16);
+  border-radius: 5px;
+  //@include media-query('sp'){
+  //  display: none;
+  //}
+}
+#fadeInFix_AnchorTopButton a:hover {
+  text-decoration: none;
+  //background: #999;
 }

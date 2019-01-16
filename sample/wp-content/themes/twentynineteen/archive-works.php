@@ -72,20 +72,20 @@ get_header();
 									<?php $terms = get_the_terms($post->ID, 'works_category'); ?>
 									<a class="home-Works_ItemAnchor" href="<?php echo get_permalink( ); ?>">
 										<figure class="home-Works_ImgUnit">
-											<?php if (get_field('movie')):?>
-												<iframe src="<?php the_field( "movie" ); ?>"></iframe>
-
-											<?php else: ?>
+<!--											--><?php //if (get_field('movie')):?>
+<!--												<iframe src="--><?php //the_field( "movie" ); ?><!--"></iframe>-->
+<!---->
+<!--											--><?php //else: ?>
 
 												<?php the_post_thumbnail(); ?>
 
-											<?php endif;?>
+<!--											--><?php //endif;?>
 
-											<?php foreach( $terms as $term ) : ?>
-												<?php if (get_field('new')):?>
-													<span class="home-Works_Item-Newicon home-Works_NewIcon-<?php echo $term->slug ;?>">NEW</span>
-												<?php endif; ?>
-											<?php endforeach; ?>
+<!--											--><?php //foreach( $terms as $term ) : ?>
+<!--												--><?php //if (get_field('new')):?>
+<!--													<span class="home-Works_Item-Newicon home-Works_NewIcon---><?php //echo $term->slug ;?><!--">NEW</span>-->
+<!--												--><?php //endif; ?>
+<!--											--><?php //endforeach; ?>
 										</figure>
 
 										<h4 class="home-Works_PostTitle"><?php echo get_the_title(); ?></h4>
@@ -106,7 +106,7 @@ get_header();
 							<?php endwhile; else: ?>
 							<!--ページが存在しない場合の指定-->
 							<?php
-							get_template_part( 'template-parts/content', 'none' );
+							get_template_part( 'template-parts/content/content', 'none' );
 							?>
 						<?php endif; ?>
 						<?php wp_reset_query(); ?>

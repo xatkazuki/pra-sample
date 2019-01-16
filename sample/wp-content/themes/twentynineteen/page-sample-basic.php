@@ -32,7 +32,7 @@ get_header();
 //			endwhile; // End of the loop.
 //			?>
 
-			<header class="entry-header namespace-block">
+			<header id="anchor-pagetop" class="entry-header namespace-block">
 				<?php
 				if ( is_sticky() && is_home() && ! is_paged() ) {
 					printf( '<span class="sticky-post">%s</span>', _x( 'Featured', 'post', 'twentynineteen' ) );
@@ -209,6 +209,9 @@ get_header();
 					<!--
 						参考：http://bashalog.c-brains.jp/17/02/28-103000.php
 								 https://on-ze.com/archives/6971
+								 2つのファイルを読み込みして実装
+								 <link rel="stylesheet" href="//cdn.jsdelivr.net/modaal/0.3.1/css/modaal.min.css">
+								 <script src="//cdn.jsdelivr.net/modaal/0.3.1/dist/js/modaal.min.js">
 					 -->
 
 					<script>
@@ -231,7 +234,7 @@ get_header();
 
 						<div class="modal-Recommend_Content">
 							<p class="modal-Recommend_Text modal-Recommend_Text-1">
-								フィギュアの価格は、発売後、<br>
+								商品の価格は、発売後、<br>
 								毎週値下がりしてしまいます。<br>
 								今が最高値の可能性が高いです。<br>
 								<span class="modal-Recommend_Text-emphasis">売るなら今です！</span><br>
@@ -395,9 +398,46 @@ get_header();
 
 			</div>
 
+			<footer>
+			<button id="fadeInFix_AnchorTopButton">
+				<a href="#anchor-pagetop">
+
+<!--					<img src="--><?php //bloginfo('template_directory'); ?><!--/images/common/page-top.png" alt=""><br>-->
+					ページTOPへ
+				</a>
+			</button>
+			</footer>
+
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
+<script>
+	$(function() {
+
+		var w =$(window).width();
+		if (w > 768){
+			var topBtn = $('#fadeInFix_AnchorTopButton');
+			topBtn.hide();
+			//スクロールが100に達したらボタン表示
+
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 100) {
+					topBtn.fadeIn();
+				} else {
+					topBtn.fadeOut();
+				}
+			});
+		}
+
+		//スクロールしてトップ
+		topBtn.click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 500);
+			return false;
+		});
+	});
+</script>
 <?php
 get_footer();
