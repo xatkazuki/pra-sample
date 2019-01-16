@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The template for displaying all single posts
@@ -377,24 +376,42 @@ get_header();
 //					</script>
 
 					<ul>
-						<li>
+						<li class="underLine-animation">
 							<a href="#top">topへ戻る</a>
 						</li>
-						<li>
+						<li class="underLine-animation">
 							<a href="#textslide">横からのスライドへ</a>
 						</li>
-						<li>
+						<li class="underLine-animation">
 							<a href="#accordion">アコーディオンへ</a>
 						</li>
-						<li>
+						<li class="underLine-animation">
 							<a href="#modal">モーダルへ</a>
 						</li>
-						<li>
+						<li class="underLine-animation">
 							<a href="#slick">slickへ</a>
 						</li>
 					</ul>
 
 				</div>
+
+				<hr>
+
+				タブ
+
+				<ul class="service-Tab js_tab">
+					<li class="js_tab1 js_tab_color js_tab_current_color">タブ１</li>
+					<li class="js_tab2 js_tab_color">タブ２</li>
+				</ul>
+
+				<div class="js_tab_content js_tab_current_content js_tab_content-1">
+					タブ１のコンテンツ
+				</div>
+
+				<div class="js_tab_content js_tab_content-2">
+					タブ2のコンテンツ
+				</div>
+
 
 			</div>
 
