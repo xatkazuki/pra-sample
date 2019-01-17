@@ -23,13 +23,13 @@ get_header();
 
             <section class="works-Section">
 
-                <header class="st-Whole sw-Section_Header works-Section_Header">
+                <header class="st-Whole home-Works_Header works-Section_Header">
                     <h1 class="sw-Section_HeaderTitle works-Section_HeaderTitle">WORKS</h1>
                 </header>
 
                 <div class="st-Whole works-Section_Container">
 
-                    <div class="st-Content_Inner works-Section_Inner">
+                    <div class="st-Content_Inner works-Section_Inner namespace-block">
 
                         <div class="works-Navigation">
                             <div class="works-Navigation_List">
@@ -40,7 +40,7 @@ get_header();
                                 </a>
                                 <?php
                                 $terms = get_terms('works_category',array('get'=>'all') );
-                                $client_terms = get_terms('client',array('get'=>'all') );
+//                                $client_terms = get_terms('client',array('get'=>'all') );
 
 
                                 if ( ! empty( $terms ) && !is_wp_error( $terms ) ){
@@ -49,9 +49,9 @@ get_header();
                                         echo '<a href="'.get_term_link($term).'">' .'<div class="works-Navigation_Item works-Navigation_Item-' .$term->slug .'">'  .$term->name .'</div>' .'</a>';
                                     }
 
-                                    foreach ( $client_terms as $client_term ) {
-                                        echo '<a href="'.get_term_link($client_term).'">' .'<div class="works-Navigation_Item works-Navigation_Item-' .$client_term->slug .' ">' . $client_term->name .'</div>' .'</a>';
-                                    }
+//                                    foreach ( $client_terms as $client_term ) {
+//                                        echo '<a href="'.get_term_link($client_term).'">' .'<div class="works-Navigation_Item works-Navigation_Item-' .$client_term->slug .' ">' . $client_term->name .'</div>' .'</a>';
+//                                    }
                                 }
                                 ?>
 
@@ -111,7 +111,7 @@ get_header();
                                  * If you want to override this in a child theme, then include a file
                                  * called content-___.php (where ___ is the Post Type name) and that will be used instead.
                                  */
-                                get_template_part( 'template-parts/content-taxonomy', get_post_type() );
+                                get_template_part( 'template-parts/content/content-taxonomy', get_post_type() );
 
                             endwhile;
 
@@ -152,7 +152,7 @@ get_header();
                                 </a>
                                 <?php
                                 $terms = get_terms('works_category','get=all' );
-                                $client_terms = get_terms('client','get=all' );
+//                                $client_terms = get_terms('client','get=all' );
 
 
                                 if ( ! empty( $terms ) && !is_wp_error( $terms ) ){
@@ -161,9 +161,9 @@ get_header();
                                         echo '<a href="'.get_term_link($term).'">' .'<div class="works-Navigation_Item works-Navigation_Item-' .$term->slug .'">'  .$term->name .'</div>' .'</a>';
                                     }
 
-                                    foreach ( $client_terms as $client_term ) {
-                                        echo '<a href="'.get_term_link($client_term).'">' .'<div class="works-Navigation_Item works-Navigation_Item-' .$client_term->slug .' ">' . $client_term->name .'</div>' .'</a>';
-                                    }
+//                                    foreach ( $client_terms as $client_term ) {
+//                                        echo '<a href="'.get_term_link($client_term).'">' .'<div class="works-Navigation_Item works-Navigation_Item-' .$client_term->slug .' ">' . $client_term->name .'</div>' .'</a>';
+//                                    }
                                 }
                                 ?>
 
@@ -172,7 +172,7 @@ get_header();
 
                         <?php
 
-                            get_template_part( 'template-parts/content', 'none' );
+                            get_template_part( 'template-parts/content/content', 'none' );
 
                         endif;?>
                     </div><!-- works-Section_Inner　投稿がない時の指定-->
@@ -185,7 +185,7 @@ get_header();
 
                             <?php
                             $terms = get_terms('works_category','get=all' );
-                            $client_terms = get_terms('client' );
+//                            $client_terms = get_terms('client' );
 
 
                             if ( ! empty( $terms ) && !is_wp_error( $terms ) ){
@@ -194,9 +194,9 @@ get_header();
                                     echo  '<a class="works-Aside_SubNavAnchor" href="'.get_term_link($term).'">'.'<div class="works-Aside_SubNavigation works-Navigation_Item works-Navigation_Item-' .$term->slug .'">' .$term->name .'</div>' .'</a>';
                                 }
 
-                                foreach ( $client_terms as $client_term ) {
-                                    echo '<a class="works-Aside_SubNavAnchor" href="'.get_term_link($client_term).'">' .'<div class="works-Aside_SubNavigation works-Navigation_Item works-Navigation_Item-' .$client_term->slug .' ">'  . $client_term->name .'</div>' .'</a>';
-                                }
+//                                foreach ( $client_terms as $client_term ) {
+//                                    echo '<a class="works-Aside_SubNavAnchor" href="'.get_term_link($client_term).'">' .'<div class="works-Aside_SubNavigation works-Navigation_Item works-Navigation_Item-' .$client_term->slug .' ">'  . $client_term->name .'</div>' .'</a>';
+//                                }
                             }
                             ?>
                         </div>

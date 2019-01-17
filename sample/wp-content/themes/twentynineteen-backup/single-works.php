@@ -29,7 +29,7 @@ get_header();
 							</a>
 							<?php
 							$terms = get_terms('works_category','get=all' );
-							$client_terms = get_terms('client' );
+//							$client_terms = get_terms('client' );
 
 
 							if ( ! empty( $terms ) && !is_wp_error( $terms ) ){
@@ -53,12 +53,14 @@ get_header();
 					<div class="st-Content_ColumnLeft">
 						<section class="works-Detail_Main">
 
+
 							<?php
-								while ( have_posts() ) :
+
+							while ( have_posts() ) :
 									the_post();
 
 //									get_template_part( 'template-parts/content-work', get_post_type() );
-									get_template_part( 'template-parts/content/content', 'single' );
+									get_template_part( 'template-parts/content/content', 'work' );
 
 						//			the_post_navigation();
 
@@ -84,9 +86,14 @@ get_header();
 									$post_terms = wp_get_object_terms($post->ID, $taxonomy_slug); // タクソノミーの指定
 									$value = "";
 									if( $post_terms && !is_wp_error($post_terms)) { // 値があるときに作動
+
+//										$term = get_the_terms($post->ID, 'works_category');
 										$terms_slug = array(); // 配列のセット
 										foreach( $post_terms as $value ){ // 配列の作成
-											$terms_slug[] = $value->slug; // タームのスラッグを配列に追加
+                        $term_id = get_queried_object_id();
+                        if($value->term_id ==  $term_id){
+													$terms_slug[] = $value->slug; // タームのスラッグを配列に追加
+													}
 										}
 									}
 									$args = array(

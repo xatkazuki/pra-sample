@@ -1,240 +1,224 @@
-.home-Works{
-  padding: 70px 0 100px 0;
-  border-bottom: #000 3px solid;
-}
-.home-Works_Header{
-
-}
-.home-Works_HeaderTitle{
-  //@include font-poppins-bold();
-  @include font-size( 31/ 16);
-  color:#000;
-}
-.home-Works_List{
-  //@include clearfix();
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 70px 0 0;
-  list-style-type: none;
-  //@include media-query('sp'){
-  //  margin: 0;
-  //}
-}
-.home-Works_Item{
-  width: 300px;
-  margin: 0 0 50px 0;
-  &:hover{
-    opacity: 0.6;
-    transition: 0.4s;
-  }
-  //@include media-query('sp'){
-  //  width: 100%;
-  //  margin: 70px auto 0;
-  //  text-align: center;
-  //}
-  a:hover{
-    text-decoration: none;
-  }
-}
-.home-Works_Item-Newicon {
-  //@include font-RobotoSlab();
-  margin: 0;
-  padding: 10px 0 0;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 45px;
-  height: 45px;
-  color: #fff;
-  text-align: center;
-  border-radius: 30px;
-  background-color: red;
-  //@include media-query('sp'){
-  //  position: absolute;
-  //  top: -20px;
-  //  left: 5px;
-  //
-  //}
-}
-.home-Works_NewIcon-buisiness{
-  background-color: #e84c18;
-  &:before{
-    border-color: transparent transparent #e84c18 transparent;
-  }
-  &:after {
-    border-color: #e84c18 transparent transparent transparent;
-  }
-}
-.home-Works_NewIcon-creative{
-  background-color: #7991c9;
-  &:before{
-    border-color: transparent transparent #7991c9 transparent;
-  }
-  &:after {
-    border-color: #7991c9 transparent transparent transparent;
-  }
-}
-.home-Works_NewIcon-produce{
-  background-color: #e77c80;
-  &:before{
-    border-color: transparent transparent #e77c80 transparent;
-  }
-  &:after {
-    border-color: #e77c80 transparent transparent transparent;
-  }
-}
-.home-Works_NewIcon-project{
-  background-color: #00a595;
-  &:before{
-    border-color: transparent transparent #00a595 transparent;
-  }
-  &:after {
-    border-color: #00a595 transparent transparent transparent;
-  }
-}
-.home-Works_NewIcon-media{
-  background-color: #e7942d;
-  &:before{
-    border-color: transparent transparent #e7942d transparent;
-  }
-  &:after {
-    border-color: #e7942d transparent transparent transparent;
-  }
-}
-.home-Works_NewIcon-client{
-  background-color: #479ebe;
-  margin: 0;
-  &:before{
-    border-color: transparent transparent #479ebe transparent;
-  }
-  &:after {
-    border-color: #479ebe transparent transparent transparent;
-  }
-}
-
-.home-Works_ItemAnchor{
-}
-.home-Works_ImgUnit{
-  position: relative;
-  width: 300px;
-  height: 205px;
+.ui-icon-circle{
   display: block;
-  box-shadow: 0 0 6px 3px #f3f3f3;
-  img{
-    width:100%;
-    height: 100%;
-  }
-  iframe{
-    width:100%;
-    height: 100%;
-    border: none;
-  }
-  //@include media-query('sp'){
-  //  margin: 0 auto;
-  //}
-}
-.home-Works_PostTitle{
-  //@include font-noto();
-  @include font-size( 13/ 16);
-  margin: 10px 0 0 0;
-  line-height: ( 20/13);
-  color: #000;
-}
-.home-Works_CategoryLabel{
-  //@include font-poppins-semibold();
-  @include font-size( 13/ 16);
-  letter-spacing: 0.03em;
-  position: relative;
-  width: 125px;
-  height: 25px;
-  margin: 10px auto 0;
-  padding: 3px 0;
+  background-color: darkorange;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   text-align: center;
-  color: #fff;
-  a:hover{
-    text-decoration: none;
+  padding: 5px 0 0;
+}
+
+.ui-icon-circle-test{
+  display: block;
+  background-color: darkblue;
+  color: #ffffff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px 0 0;
+}
+
+.flex-container{
+  display: flex;
+  border: 1px solid #000;
+  width:980px;
+  height: 100px;
+  margin: 0 auto;
+
+}
+
+.flex-child{
+  border: 1px solid #000;
+  display: flex;
+}
+
+.flex-child-inner1{
+
+}
+.flex-child-inner2{
+  height:60px;
+
+}
+.flex-child-inner3{
+  height:80px;
+
+}
+.flex-child-inner4{
+
+}
+.flex-child-inner5{
+  height:10px;
+}
+
+.flex-child-height30px{
+  height: 30px;
+}
+
+/*
+  //flex-itemの位置を水平調整（item同士の単位で調整
+  //
+  //(contentの位置を垂直調整（行単位）に対して行いたいときは align-content のプロパティを使用)
+  //
+*/
+.flex-alignitems_stretch{
+  align-items: stretch;
+}
+  .flex-aligncontent_stretch{
+    align-content: stretch;
+
   }
-  &:before{
-    position: absolute;
-    left: -10px;
-    top: 0;
-    content: '';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 25px 10px;
-    //@include media-query('sp'){
-    //  border-width: 0 0 25px 11px;
-    //}
+.flex-alignitems_start{
+  align-items: flex-start;
+}
+  .flex-aligncontent_start{
+    align-content: flex-start;
   }
-  &:after {
-    position: absolute;
-    right: -10px;
-    top: 0;
-    content: '';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 25px 10px 0 0;
-    //@include media-query('sp'){
-    //  border-width: 25px 11px 0 0;
-    //}
+.flex-alignitems_end{
+  align-items: flex-end;
+
+}
+  .flex-aligncontent_end{
+    align-content: flex-end;
+
+  }
+
+.flex-alignitems_center{
+  align-items: center;
+}
+  .flex-aligncontent_center{
+    align-content: center;
+
+  }
+
+
+.flex-justifycontent_between{
+  justify-content: space-between;
+}
+.flex-justifycontent_around{
+  justify-content: space-around;
+
+}
+
+.flex-justifycontent_start{
+  justify-content: flex-start;
+
+}
+.flex-justifycontent_end{
+  justify-content: flex-end;
+
+}
+.flex-justifycontent_center{
+  justify-content: center;
+
+}
+
+.flex-direction_column{
+  flex-direction: column;
+  height:auto;
+}
+
+.flexItem-order{
+
+  &1{
+    order:1;
+  }
+  &2{
+    order:2;
+  }
+  &3{
+    order:3;
+  }
+  &4{
+    order:4;
+  }
+  &5{
+    order:5;
+  }
+
+}
+
+.flecItem-grow{
+  flex-grow: 1;
+
+  &2x{
+    flex-grow: 3;
   }
 }
-.home-Works_CategoryLabel-buisiness{
-  background-color: #e84c18;
-  &:before{
-    border-color: transparent transparent #e84c18 transparent;
-  }
-  &:after {
-    border-color: #e84c18 transparent transparent transparent;
+
+.flexItem-basis{
+  flex-basis: auto;
+  &250{
+    flex-basis: 250px;
   }
 }
-.home-Works_CategoryLabel-creative{
-  background-color: #7991c9;
-  &:before{
-    border-color: transparent transparent #7991c9 transparent;
+
+.flexItem-alignself{
+  align-self: auto;
+  &_start{
+    align-self: flex-start;
   }
-  &:after {
-    border-color: #7991c9 transparent transparent transparent;
+  &_stretch{
+    align-self: stretch;
   }
-}
-.home-Works_CategoryLabel-produce{
-  background-color: #e77c80;
-  &:before{
-    border-color: transparent transparent #e77c80 transparent;
-  }
-  &:after {
-    border-color: #e77c80 transparent transparent transparent;
+  &_end{
+    align-self: flex-end;
   }
 }
-.home-Works_CategoryLabel-project{
-  background-color: #00a595;
-  &:before{
-    border-color: transparent transparent #00a595 transparent;
-  }
-  &:after {
-    border-color: #00a595 transparent transparent transparent;
-  }
+
+/*
+flex-itemに使用するflexプロパティについて
+(制御が難しいので使いこな成すことは難しい)
+*/
+
+/*
+//値1つの構文: 値は以下のうちの1つです。
+//単位なしの <number>: <flex-grow> として解釈されます。
+//width として有効な値: <flex-basis> として解釈されます。
+//none, auto, initial のキーワード値のいずれか。
+
+//値2つの構文: 最初の値は単位なしの <number> でなければならず、 <flex-grow> として解釈されます。2つ目の値は以下のうちの1つです。
+//単位なしの <number>: <flex-shrink> として解釈されます。
+//width として有効な値: <flex-basis> として解釈されます。
+
+//値3つの構文:
+//最初の値は単位なしの <number> でなければならず、 <flex-grow> として解釈されます。
+//2つ目の値は単位なしの <number> でなければならず、 <flex-shrink> として解釈されます。
+//3つ目の値は width として有効な値でなければならず、 <flex-basis> として解釈されます。
+*/
+
+.flex-container-test{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+  width:980px;
+  height: auto;
+  margin: 0 auto;
 }
-.home-Works_CategoryLabel-media{
-  background-color: #e7942d;
-  &:before{
-    border-color: transparent transparent #e7942d transparent;
+
+.flexItem-flex{
+  flex: 0 auto;
+  &2x{
+    flex: 0 250px;
   }
-  &:after {
-    border-color: #e7942d transparent transparent transparent;
+  &-test{
+    flex: 300px;
+    height: 330px;
+
+    img{
+      width: 100%;
+      height: 250px;
+    }
   }
-}
-.home-Works_CategoryLabel-client{
-  background-color: #479ebe;
-  margin: 0;
-  &:before{
-    border-color: transparent transparent #479ebe transparent;
-  }
-  &:after {
-    border-color: #479ebe transparent transparent transparent;
+  &-custom{
+    flex: 450px;
+    height: 350px;
+
+    img{
+      width: 100%;
+      height: 270px;
+
+    }
   }
 }
