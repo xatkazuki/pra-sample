@@ -400,7 +400,7 @@ get_header();
 				タブ
 
 				<ul class="service-Tab js_tab">
-					<li class="js_tab1 js_tab_color js_tab_current_color">タブ１</li>
+					<li class="js_tab1 js_tab_color js_tab_current_color">タブ１ Well hello there</li>
 					<li class="js_tab2 js_tab_color">タブ２</li>
 				</ul>
 
@@ -412,6 +412,45 @@ get_header();
 					タブ2のコンテンツ
 				</div>
 
+				<hr>
+
+				hover時にtrancelateの動きをcssで実装
+
+
+				<div class="hover-Trance-parent">
+
+						<figure>
+							<img src="<?php bloginfo('template_directory') ;?>/images/dance-640.jpg" alt="">
+						</figure>
+
+						<p class="hover-Trance-mask">
+							　Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+						</p>
+
+				</div>
+
+
+
+				<hr>
+
+				<ul class="hover-Scale-parent">
+					<li class="hover-Scale">
+						<img src="<?php bloginfo('template_directory');?>/images/pencil-640.jpg">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</li>
+
+					<li class="hover-Scale">
+						<img src="<?php bloginfo('template_directory');?>/images/dance-640.jpg">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</li>
+
+					<li class="hover-Scale">
+						<img src="<?php bloginfo('template_directory');?>/images/business-640.jpg">
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</li>
+
+				</ul>
+				
 
 			</div>
 

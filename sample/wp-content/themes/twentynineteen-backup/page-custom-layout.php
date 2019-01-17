@@ -30,7 +30,11 @@ get_header(); ?>
 //			endwhile; // End of the loop.
 //			?>
 
-            <section class="cstomLyout-Section">
+        <header class="cstomLyout-Header">
+<!--            <img src="--><?php //bloginfo('template_directory');?><!--/images/dirt-road-1920.jpg">-->
+        </header>
+
+            <section class="cstomLyout-Section namespace-Main namespace-Main-cstomLyout">
                 <header class="cstomLyout-Section_Header">
                     <h2 class="cstomLyout-Section_Title">セクションのメインタイトル</h2>
                     <span class="cstomLyout-Section_SubTitle">Englesh-Title</span>
@@ -40,11 +44,14 @@ get_header(); ?>
                 <div class="cstomLyout-Section_Content">
                     <div class="cstomLyout-SubSection">
                         <div class="cstomLyout-SubSection_Header cstomLyout-SubSection_Header-content1">
-                            <h3 class="cstomLyout-SubSection_Title">サブコンテンツ１のタイトル</h3>
+                            <h3 class="cstomLyout-SubSection_Title">サブコンテンツ１のタイトル-OurProduct</h3>
                             <p class="cstomLyout-Subsection_TitleDscript">ディスクリプショントとなるようなテキストが入る。タイトルとは別に補足的に文章が入ることは多いです。</p>
                         </div>
-                        <div class="cstomLyout-SubSection_Content cstomLyout-SubSection_Content-1">
-                            <p class="cstomLyout-Text">
+                        <div class="cstomLyout-SubSection_Content cstomLyout-SubSection_Content-1 cstomLyout-Product">
+
+                            <h4 class="cstomLyout-Product_Title">ROAD SPORTS</h4>
+
+                            <p class="cstomLyout-Text cstomLyout-Text_Stroken cstomLyout-Text-w">
                                 cstomLyout-layoutのサブコンテンツその１のテキスト<br>
                                 cstomLyout-layoutのサブコンテンツその１のテキスト<br>
                                 cstomLyout-layoutのサブコンテンツその１のテキスト<br>
@@ -54,17 +61,128 @@ get_header(); ?>
 
                     <div class="cstomLyout-SubSection">
                         <div class="cstomLyout-SubSection_Header cstomLyout-SubSection_Header-content2">
-                            <h3 class="cstomLyout-SubSection_Title">サブコンテンツ２のタイトル</h3>
-                            <p>ディスクリプショントとなるようなテキストが入る。タイトルとは別に補足的に文章が入ることは多いです。</p>
+                            <h3 class="cstomLyout-SubSection_Title cstomLyout-Text_Stroken cstomLyout-Text-w">サブコンテンツ２のタイトル<br>-About-</h3>
+                            <p class="cstomLyout-Text_Stroken cstomLyout-Text-w">ディスクリプショントとなるようなテキストが入る。タイトルとは別に補足的に文章が入ることは多いです。</p>
                         </div>
                         <div class="cstomLyout-SubSection_Content cstomLyout-SubSection_Content-2">
-                            <p>
+                            <p class="cstomLyout-Text cstomLyout-Text_Stroken cstomLyout-Text-w">
                                 cstomLyout-layoutのサブコンテンツその２のテキスト<br>
                                 cstomLyout-layoutのサブコンテンツその２のテキスト<br>
                                 cstomLyout-layoutのサブコンテンツその２のテキスト<br>
                             </p>
+
+                            <button class="cstomLyout-Button">More</button>
                         </div>
                     </div><!-- /.SubSection -->
+
+                    <div class="cstomLyout-SubSection">
+
+                        <div class="cstomLyout-SubSection_Content-division">
+
+                            <div class="cstomLyout-SubSection_Content-quarter">
+                                <span class="ui-icon-circle-test">1</span>
+                                <img src="<?php bloginfo('template_directory');?>/images/board-640.jpg">
+                            </div>
+
+                            <div class="cstomLyout-SubSection_Content-quarter">
+                                <span class="ui-icon-circle-test">2</span>
+                                <img src="<?php bloginfo('template_directory');?>/images/business-640.jpg">
+
+                            </div>
+
+                            <div class="cstomLyout-SubSection_Content-quarter">
+
+                                <span class="ui-icon-circle-test">3</span>
+                                <img src="<?php bloginfo('template_directory');?>/images/laptop-640.jpg">
+                            </div>
+
+                            <div class="cstomLyout-SubSection_Content-quarter">
+                                <span class="ui-icon-circle-test">4</span>
+                                <img src="<?php bloginfo('template_directory');?>/images/pencil-640.jpg">
+                            </div>
+
+<!--                            <div class="flexItem-flex-test" style="background-color:darkorange;">-->
+<!--                                <span class="ui-icon-circle-test">5</span>-->
+<!--                                <img src="--><?php //bloginfo('template_directory');?><!--/images/walk-640.jpg">-->
+<!--                            </div>-->
+
+                        </div>
+
+                    </div><!-- /.SubSection -->
+
+                    <div class="cstomLyout-SubSection">
+
+                        <div class="cstomLyout-SubSection_Content-division">
+
+                            <div class="cstomLyout-SubSection_Content-third">
+                                <span class="ui-icon-circle-test">1</span>
+                                <img src="<?php bloginfo('template_directory');?>/images/board-640.jpg">
+                            </div>
+
+                            <div class="cstomLyout-SubSection_Content-third" style="background-color:darkorange;">
+                                <span class="ui-icon-circle-test">2</span>
+                                <img src="<?php bloginfo('template_directory');?>/images/business-640.jpg">
+
+                            </div>
+
+                            <div class="cstomLyout-SubSection_Content-third" style="background-color:gray;">
+
+                                <span class="ui-icon-circle-test">3</span>
+                                <img src="<?php bloginfo('template_directory');?>/images/laptop-640.jpg">
+                            </div>
+                            <!---->
+                            <!--                            <div class="flexItem-flex-test">-->
+                            <!--                                <span class="ui-icon-circle-test">4</span>-->
+                            <!--                                <img src="--><?php //bloginfo('template_directory');?><!--/images/pencil-640.jpg">-->
+                            <!--                            </div>-->
+
+                            <!--                            <div class="flexItem-flex-test" style="background-color:darkorange;">-->
+                            <!--                                <span class="ui-icon-circle-test">5</span>-->
+                            <!--                                <img src="--><?php //bloginfo('template_directory');?><!--/images/walk-640.jpg">-->
+                            <!--                            </div>-->
+
+                        </div>
+
+                    </div><!-- /.SubSection -->
+
+
+
+                    <div class="cstomLyout-SubSection">
+
+                        <div class="cstomLyout-SubSection_Content-division">
+
+                            <div class="cstomLyout-SubSection_Content-half" style="background-color:gray;">
+                                <span class="ui-icon-circle-test">1</span>
+                                <img src="<?php bloginfo('template_directory');?>/images/board-640.jpg">
+                            </div>
+
+                            <div class="cstomLyout-SubSection_Content-half" style="background-color:darkorange;">
+                                <span class="ui-icon-circle-test">2</span>
+                                <img src="<?php bloginfo('template_directory');?>/images/business-640.jpg">
+
+                            </div>
+
+<!--                            <div class="flexItem-flex-test" style="background-color:gray;">-->
+<!---->
+<!--                                <span class="ui-icon-circle-test">3</span>-->
+<!--                                <img src="--><?php //bloginfo('template_directory');?><!--/images/laptop-640.jpg">-->
+<!--                            </div>-->
+<!---->
+<!--                            <div class="flexItem-flex-test">-->
+<!--                                <span class="ui-icon-circle-test">4</span>-->
+<!--                                <img src="--><?php //bloginfo('template_directory');?><!--/images/pencil-640.jpg">-->
+<!--                            </div>-->
+
+                            <!--                            <div class="flexItem-flex-test" style="background-color:darkorange;">-->
+                            <!--                                <span class="ui-icon-circle-test">5</span>-->
+                            <!--                                <img src="--><?php //bloginfo('template_directory');?><!--/images/walk-640.jpg">-->
+                            <!--                            </div>-->
+
+                        </div>
+
+                    </div><!-- /.SubSection -->
+
+
                 </div><!-- /.Section_Content -->
             </section>
 

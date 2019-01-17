@@ -55,24 +55,27 @@ get_header(); ?>
                     <div class="sngLyout-Section_Content sngLyout-Content"><!-- 1020px -->
                         <div class="sngLyout-Content_Inner"><!-- 980px -->
                             <p class="sngLyout-Text sngLyout-Content_Body sngLyout-Content-right"><!-- 540px -->
-                                content2の具体的な内容がここから始まります。single-layout構成なので、縦に流れるようにコンテンツが組み立てられていて、できる限り、１画面には１文章にするほうが見やすいレイアウトになります。<b class="sngLyout-Text-lg">font-size</b>や<b class="sngLyout-Text-lg">font-family</b>や<b class="sngLyout-Text-lg">余白</b>の使い方、simpleなcolor展開がより見やすいpointとなります。<b class="sngLyout-Text-lg">落ち着いた雰囲気</b>や<b class="sngLyout-Text-lg">安心感</b>を与えたいときには適しています。また、<b class="sngLyout-Text-lg"></b>動きを付けたい場合にはその他のデザインはsimpleなほうが適しているので<strong class="sngLyout-Text_Strong">single-layout</strong>が適しています。
+                                content1の具体的な内容がここから始まります。single-layout構成なので、縦に流れるようにコンテンツが組み立てられていて、できる限り、１画面には１文章にするほうが見やすいレイアウトになります。<b class="sngLyout-Text-lg">font-size</b>や<b class="sngLyout-Text-lg">font-family</b>や<b class="sngLyout-Text-lg">余白</b>の使い方、simpleなcolor展開がより見やすいpointとなります。<b class="sngLyout-Text-lg">落ち着いた雰囲気</b>や<b class="sngLyout-Text-lg">安心感</b>を与えたいときには適しています。また、<b class="sngLyout-Text-lg"></b>動きを付けたい場合にはその他のデザインはsimpleなほうが適しているので<strong class="sngLyout-Text_Strong">single-layout</strong>が適しています。
                             </p>
 
                             <figure class="sngLyout-Content_Img sngLyout-Content-left"><!-- 440px -->
-                                <img src="" alt="">
+                                <img src="<?php bloginfo('template_directory') ;?>/images/sunrise-1280.jpg" alt="">
                             </figure>
                         </div>
 
+
+                        <h3 style="text-align: center"> news</h3>
+
                         <ul class="sngLyout-Content sngLyout-Content_Body-newsList sngLyout-Content-center"><!-- 1020px -->
-                            <li>test1</li>
-                            <li>テスト２</li>
-                            <li>てすと３</li>
-                            <li>TEST4</li>
+                            <li style="margin: 0 0 15px 0;"><time style="display: inline-block; margin: 0 15px 0 0;">20xx.01.04</time><span style="display: inline-block; margin: 0 15px 0 0; background-color: red; color: #ffffff;">category1</span>newsのリスト1</li>
+                            <li style="margin: 0 0 15px 0;"><time style="display: inline-block; margin: 0 15px 0 0;">20xx.01.04</time><span style="display: inline-block; margin: 0 15px 0 0; background-color: yellow; color: #000;">category2</span>newsのリスト2</li>
+                            <li style="margin: 0 0 15px 0;"><time style="display: inline-block; margin: 0 15px 0 0;">20xx.01.04</time><span style="display: inline-block; margin: 0 15px 0 0; background-color: blue; color: #ffffff;">category3</span>newsのリスト3</li>
+                            <li style="margin: 0 0 15px 0;"><time style="display: inline-block; margin: 0 15px 0 0;">20xx.01.04</time><span style="display: inline-block; margin: 0 15px 0 0; background-color: red; color: #ffffff;">category1</span>newsのリスト4</li>
                         </ul>
 
                     </div>
                     <figure class="sngLyout-Content-max"><!-- 1280px -->
-                        <img src="" alt="officeの内観">
+                        <img src="<?php bloginfo('template_directory') ;?>/images/snowman-1920.jpg" alt="officeの内観">
                     </figure>
                 </section>
 
@@ -92,7 +95,7 @@ get_header(); ?>
                         </p>
 
                         <figure class="sngLyout-Content_Img sngLyout-Content-center">
-                            <img src="" alt="">
+                            <img src="<?php bloginfo('template_directory') ;?>/images/dirt-road-1280.jpg" alt="">
                         </figure>
                     </div>
                 </section>
@@ -110,7 +113,7 @@ get_header(); ?>
                             </p>
 
                             <figure class="sngLyout-Content_Img sngLyout-Content-right">
-                                <img src="" alt="">
+                                <img src="<?php bloginfo('template_directory') ;?>/images/dance-640.jpg" alt="">
                             </figure>
                         </div>
                     </div>

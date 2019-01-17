@@ -223,7 +223,12 @@ function twentynineteen_scripts() {
 
 	wp_enqueue_script( 'twentynineteen-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array(), '20180309', true );/*slickを読み込み*/
+	wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array(), '20180309', true );/*slick jsファイルを読み込み*/
+	wp_enqueue_script( 'modaal', get_template_directory_uri() . '/js/vendor.js', array(), '20190109', false );/*modal実装のためファイルを読み込み*/
+
+//	<link rel="stylesheet" href="//cdn.jsdelivr.net/modaal/0.3.1/css/modaal.min.css">
+//<script src="//cdn.jsdelivr.net/modaal/0.3.1/dist/js/modaal.min.js">
+//
 
 
 	if ( has_nav_menu( 'menu-1' ) ) {
@@ -232,14 +237,23 @@ function twentynineteen_scripts() {
 	}
 
 	if ( !is_admin() ) {
+		wp_deregister_script( 'jquery' );
+
 		wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), null); /*jqueryの読み込み*/
+
+		/*ふわっと浮き出るanimation用のjquery*/
 		wp_enqueue_script( 'scrollMagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js', array('jquery'), '20151215', true );/*ふわっと浮き出るanimation用のjquery*/
+
+		wp_enqueue_script( 'modaal', 'https://cdn.jsdelivr.net/modaal/0.3.1/dist/js/modaal.min.js', array('jquery'), '20190115', false);/*ふわっと浮き出るanimation用のjquery*/
+
+		wp_enqueue_script( 'service-tab', get_template_directory_uri() . '/js/name-tab.js', array('jquery'), '20190115', false );
+
 
 		/*slickを読み込み部分*/
 //		wp_deregister_script('jquery');
 //		wp_enqueue_script('jquery', '//cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js', array(), '1.12.4', false);
 //		wp_deregister_script('jquery-migrate');
-		wp_enqueue_script('jquery-migrate', '//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js', array(), '1.4.1', false);/*slickを読み込み*/
+		wp_enqueue_script('jquery-migrate', '//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js', array(), '1.4.1', false);/*slick web読み込み*/
 
 	}
 

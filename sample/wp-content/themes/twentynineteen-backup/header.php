@@ -16,7 +16,13 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">//dropdownを読み込み</script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/modaal/0.3.1/css/modaal.min.css">
+<!--	<script src="//cdn.jsdelivr.net/modaal/0.3.1/dist/js/modaal.min.js">-->
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">//dropdownを読み込み</script>
 	<script>
 		$(function() {
 			var dropdown = $('.dropdown');

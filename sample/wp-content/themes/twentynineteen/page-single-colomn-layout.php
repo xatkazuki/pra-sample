@@ -97,6 +97,7 @@ get_header(); ?>
                         <figure class="sngLyout-Content_Img sngLyout-Content-center">
                             <img src="<?php bloginfo('template_directory') ;?>/images/dirt-road-1280.jpg" alt="">
                         </figure>
+
                     </div>
                 </section>
 
@@ -106,15 +107,19 @@ get_header(); ?>
                         <h2 class="sngLyout-Section_Title">content3のセクションタイトル</h2>
                         <span class="sngLyout-Section_SubTitle">e g ) product..</span>
                     </header>
-                    <div class="sngLyout-Section_Content sngLyout-Content">
+                    <div class="sngLyout-Section_Content sngLyout-Content hover-Trance-parent">
                         <div class="sngLyout-Content_Inner">
                             <p class="sngLyout-Text sngLyout-Content_Body sngLyout-Content-left">
                                 content3の具体的な内容がここから始まります。single-layout構成なので、縦に流れるようにコンテンツが組み立てられていて、できる限り、１画面には１文章にするほうが見やすいレイアウトになります。<b class="sngLyout-Text-lg">font-size</b>や<b class="sngLyout-Text-lg">font-family</b>や<b class="sngLyout-Text-lg">余白</b>の使い方、simpleなcolor展開がより見やすいpointとなります。<b class="sngLyout-Text-lg">落ち着いた雰囲気</b>や<b class="sngLyout-Text-lg">安心感</b>を与えたいときには適しています。また、<b class="sngLyout-Text-lg"></b>動きを付けたい場合にはその他のデザインはsimpleなほうが適しているので<strong class="sngLyout-Text_Strong">single-layout</strong>が適しています。
                             </p>
 
-                            <figure class="sngLyout-Content_Img sngLyout-Content-right">
+                            <figure class="sngLyout-Content_Img sngLyout-Content-right ">
                                 <img src="<?php bloginfo('template_directory') ;?>/images/dance-640.jpg" alt="">
                             </figure>
+
+                            <p class="hover-Trance-mask">
+                                　Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
                         </div>
                     </div>
                 </section>
