@@ -1,0 +1,46 @@
+.boldDsn-Anchor{
+  text-align: center;
+}
+
+.boldDsn-Anchor_Text-about{
+  position: relative;
+  top: -40px;
+  display: inline-block;
+  color: #215e7f;
+  font-weight: bold;
+  padding: 5px 15px;
+  &:hover{
+    border: 2px solid orange;
+    color: orange;
+    transition: 0.1s;
+
+  }
+}
+.boldDsn-Anchor_Text-caseStudy{
+  position: relative;
+  top: 30px;
+  display: inline-block;
+  color: #215e7f;
+  font-weight: bold;
+  padding: 5px 15px;
+
+  &:hover{
+    border: 2px solid orange;
+    background-color: orange;
+    color: #ffffff;
+    transition: 0.1s;
+
+  }
+}
+
+
+.boldDsn-Anchor_Border-skyblue{
+  border: 2px solid #c6e4f7;
+  background-color: #ffffff;
+}
+.boldDsn-Anchor_Border-orange{
+  border: 2px solid orange;
+  background-color: #ffffff;
+}
+
+

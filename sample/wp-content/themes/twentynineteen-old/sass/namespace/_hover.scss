@@ -45,11 +45,27 @@
   padding: 0;
   opacity: 0;
   transition:all 0.6s ease;
+  //-webkit-transform: translateY(-100%);
+  //-moz-transform: translateY(100%);
+  //-ms-transform: translateY(100%);
+  //-o-transform: translateY(100%);
+  //transform: translateY(-100%);//上から
+  //transform: translateY(100%);//下から
+  //transform: translateX(100%);右から
+  //transform: translateX(-100%);左から
 
 }
 
 .hover-Trance-parent:hover .hover-Trance-mask {
   opacity: 1;
   top: 0;
+  //-webkit-transform: translateX(0);
+  //-moz-transform: translateY(0);
+  //-ms-transform: translateY(0);
+  //-o-transform: translateY(0);
+  //transform: translateY(0);
+  //transform: translateY(-50%);//下から
+  //transform: translateX(-50%);右から
+  //transform: translateX(-50%);左から
 }
 
