@@ -1,0 +1,23 @@
+@import "News";
+@import "Section";
+@import "About";
+@import "CaseStudy";
+@import "Welcom";
+@import "Header";
+@import "sw-Footer";
+@import "sw-Header";
+@import "sw-Nav";
+@import "Text";
+@import "Content";
+@import "Anchor";
+
+.boldDsn-Hr{
+  background-color: #ffffff;
+  border-bottom: 2px solid #c6e4f7;
+}
+
+.boldDsn_BodyMain{
+  background-color: floralwhite;
+  position: relative;
+  z-index: 10;
+}
