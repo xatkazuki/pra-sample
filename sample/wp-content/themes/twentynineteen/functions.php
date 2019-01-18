@@ -224,7 +224,7 @@ function twentynineteen_scripts() {
 	wp_enqueue_script( 'twentynineteen-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array(), '20180309', true );/*slick jsファイルを読み込み*/
-	wp_enqueue_script( 'modaal', get_template_directory_uri() . '/js/vendor.js', array(), '20190109', false );/*modal実装のためファイルを読み込み*/
+	wp_enqueue_script( 'modaal', get_template_directory_uri() . '/js/vendor.js', array(), '20190109', true );/*modal実装のためファイルを読み込み*/
 
 //	<link rel="stylesheet" href="//cdn.jsdelivr.net/modaal/0.3.1/css/modaal.min.css">
 //<script src="//cdn.jsdelivr.net/modaal/0.3.1/dist/js/modaal.min.js">
@@ -244,9 +244,13 @@ function twentynineteen_scripts() {
 		/*ふわっと浮き出るanimation用のjquery*/
 		wp_enqueue_script( 'scrollMagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js', array('jquery'), '20151215', true );/*ふわっと浮き出るanimation用のjquery*/
 
-		wp_enqueue_script( 'modaal', 'https://cdn.jsdelivr.net/modaal/0.3.1/dist/js/modaal.min.js', array('jquery'), '20190115', false);/*ふわっと浮き出るanimation用のjquery*/
+		wp_enqueue_script('jquery-tweenmax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js', array('jquery'), '2.0.2', true);/*tweenmax web読み込み*/
 
-		wp_enqueue_script( 'service-tab', get_template_directory_uri() . '/js/name-tab.js', array('jquery'), '20190115', false );
+		/*modaal用のjsファイル*/
+		wp_enqueue_script( 'modaal', 'https://cdn.jsdelivr.net/modaal/0.3.1/dist/js/modaal.min.js', array('jquery'), '20190115', false);/*modaal用のjsファイル*/
+
+		/*tabのjsファイル*/
+		wp_enqueue_script( 'service-tab', get_template_directory_uri() . '/js/name-tab.js', array('jquery'), '20190115', false );/*tabのjsファイル*/
 
 
 		/*slickを読み込み部分*/

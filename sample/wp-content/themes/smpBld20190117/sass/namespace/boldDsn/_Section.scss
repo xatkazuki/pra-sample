@@ -1,0 +1,52 @@
+.boldDsn-Section{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.boldDsn-Section-welcome{
+  max-width: 950px;
+}
+.boldDsn-Section-about{
+
+}
+
+.boldDsn-Section-caseStudy{
+  max-width: 750px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.boldDsn-Section_Header{
+
+}
+.boldDsn-Section_Title-casestudy{
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  img{
+
+  }
+}
+.boldDsn-Section_Title{
+  @include font-size(60 / 22);
+  display: inline-block;
+  color: #215e7f;
+  font-weight: 900;
+}
+.boldDsn-Section_Content{
+  //display: flex;
+  //justify-content: space-between;
+
+}
+
+.boldDsn-Section_Content-2Rows{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.boldDsn-Section_Content-quarter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}

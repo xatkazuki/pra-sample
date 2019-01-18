@@ -450,7 +450,44 @@ get_header();
 					</li>
 
 				</ul>
-				
+
+				<hr>
+
+				<div class="box green"></div>
+				<div class="box orange"></div>
+				<div class="box grey"></div>
+				<div class="box pink"></div>
+
+				<div class="animArea">
+					<div class="animItem" id="anim"></div>
+				</div>
+				<p><button id="start" class="btn btn-info">アニメーション実行</button></p>
+
+				<a href="https://greensock.com/get-started-js" style="display: block;"><small>greensock.com --orginalDoc--</small></a>
+				<a href="https://lab.sonicmoov.com/markup/animation-library-tweenmaxjs/" style="display: block;"><small>使い方の例 -- ブログ--</small></a>
+				<a href="https://createkt.com/scrollmagic/"><small>応用（参考程度）</small></a>
+
+
+				<script>
+
+					$('#start').on('click', function(){
+//						TweenMax.to('#anim', 2, {left:'200px'});
+						TweenMax.to('#anim',2, {
+							left: '200px',
+							repeat: 5,
+							yoyo: true
+						});
+
+						var tl = new TimelineMax({repeat:0, repeatDelay:1});
+
+						//add 3 tweens that will play in direct succession.
+						tl.to(".green", 1, {x:200});
+						tl.to(".orange", 1, {x:200, scale:0.2});
+						tl.to(".grey", 1, {x:200, scale:2, y:20});
+
+					});
+
+				</script>
 
 			</div>
 
