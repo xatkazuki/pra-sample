@@ -9,6 +9,8 @@
 @import "underLine";
 @import "tab";
 @import "hover";
+@import "tween";
+@import "nav";
 
 
 
@@ -18,7 +20,7 @@
 @import "works/works";
 @import "fullpagescroll/fullpagescroll";
 @import "panel/panel";
-@import "boldDsn/boldDsn";
+//@import "boldDsn/boldDsn";
 
 //js用のscss
 @import "js/slick";
@@ -46,117 +48,61 @@
 
 }
 
-
-.animArea{
-  position: relative;
-  height: 124px;
-  margin-bottom: 5px;
-  border: 2px solid #cccccc;
-  background: #ffffff;
-}
-.animItem{
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 100px;
-  height: 100px;
-  background: #ff0000;
+.trance-parent:hover{
+  .transform-translateX{
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    transition: 0.7s ease-in;
+  }
 }
 
-
-.box {
-  width:50px;
-  height:50px;
-  position:relative;
-  border-radius:6px;
-  margin-top:4px;
-  //display:inline-block;
-  display:block;
-  line-height:50px;
-  text-align:center;
-  color:#333;
-
+.transform-translateZ{
+  transform:rotateX(45deg);
+}
+.trance-parent:hover .transform-translateZ{
+  -webkit-transform: translateZ(100px);
+  transform: translateZ(100px);
+  transition: 0.7s ease-in;
 }
 
-.green{
-  background-color:#6fb936;
+
+.transform-translateXYZ{
+  transform:rotateX(90deg);
 }
 
-.orange {
-  background-color:#f38630;
-}
-.grey {
-  background-color:#989898;
+.trance-parent:hover .transform-translateXYZ{
+  -webkit-transform: translate3d(400px,50px,200px);
+  transform: translate3d(100px,50px,200px);
+  transition: 0.7s ease-in;
 }
 
-//button {
-//  display:inline-block;
-//  outline: none;
-//  border: none;
-//  padding: 8px 14px;
-//  background: #414141;
-//  background-image: -webkit-linear-gradient(top, #575757, #414141);
-//  background-image: -moz-linear-gradient(top, #575757, #414141);
-//  background-image: -ms-linear-gradient(top, #575757, #414141);
-//  background-image: -o-linear-gradient(top, #575757, #414141);
-//  background-image: linear-gradient(to bottom, #575757, #414141);
-//  text-shadow: 0px 1px 0px #414141;
-//  -webkit-box-shadow: 0px 1px 0px 414141;
-//  -moz-box-shadow: 0px 1px 0px 414141;
-//  box-shadow: 0px 1px 0px 414141;
-//  color: #ffffff;
-//  text-decoration: none;
-//  margin: 0 auto;
-//  -webkit-border-radius: 4;
-//  -moz-border-radius: 4;
-//  border-radius: 4px;
-//  padding: 12px 25px;
-//  font-family: "Signika Negative", sans-serif;
-//  text-transform: uppercase;
-//  font-weight: 600;
-//  cursor: pointer;
-//  font-size: 13px;
-//  line-height: 18px;
-//}
-//
-//button:hover {
-//  background: #57a818;
-//  background-image: -webkit-linear-gradient(top, #57a818, #4d9916);
-//  background-image: -moz-linear-gradient(top, #57a818, #4d9916);
-//  background-image: -ms-linear-gradient(top, #57a818, #4d9916);
-//  background-image: -o-linear-gradient(top, #57a818, #4d9916);
-//  background-image: linear-gradient(to bottom, #57a818, #4d9916);
-//  text-shadow: 0px 1px 0px #32610e;
-//  -webkit-box-shadow: 0px 1px 0px fefefe;
-//  -moz-box-shadow: 0px 1px 0px fefefe;
-//  box-shadow: 0px 1px 0px fefefe;
-//  color: #ffffff;
-//  text-decoration: none;
-//}
-//
-//.brandBar {
-//  position:absolute;
-//  width:100%;
-//  height:40px;
-//
-//  z-index:1000;
-//  line-height:40px;
-//  color:#ccc;
-//  padding-left:0px;
-//}
-//
-//.nav{
-//  margin:20px 0;
-//}
-//
-//.brandBar img{
-//  position:absolute;
-//  width:90px;
-//  right:20px;
-//  top:12px;
-//}
-//
-//.wrapper {
-//  position:absolute;
-//  padding:20px;
-//}
+.transform-transrotateZ{
+  transform:rotateX(45deg);
+}
+.trance-parent:hover .transform-transrotateZ{
+  -webkit-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+  transition: 0.7s ease-in;
+}
+
+
+.transform-transrotateXYZ{
+  transform:rotateX(90deg);
+}
+
+.trance-parent:hover {
+  .transform-transrotateXYZ{
+    -webkit-transform: rotate3d(10,10,200,45deg);
+    transform: rotate3d(10,10,10,45deg) translateX(100px);
+    transition: 0.3s ease-in;
+  }
+
+  .transform-arrange{
+    transform: rotate3d(10,10,10,45deg) translate(300px, 200px) scale(0.5);
+    transition: 0.9s ease-in;
+  }
+}
+.trance-parent:hover .trance-delay{
+  transition-delay: 0.5s;
+
+}
