@@ -221,14 +221,33 @@ function twentynineteen_scripts() {
 
 	wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
 
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css');
+
 	wp_enqueue_script( 'twentynineteen-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+	/*slick jsファイルを読み込み*/
 	wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.min.js', array(), '20180309', true );/*slick jsファイルを読み込み*/
-	wp_enqueue_script( 'modaal', get_template_directory_uri() . '/js/vendor.js', array(), '20190109', true );/*modal実装のためファイルを読み込み*/
 
-//	<link rel="stylesheet" href="//cdn.jsdelivr.net/modaal/0.3.1/css/modaal.min.css">
-//<script src="//cdn.jsdelivr.net/modaal/0.3.1/dist/js/modaal.min.js">
-//
+	/*navigation実装のためファイルを読み込み*/
+	wp_enqueue_script( 'navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20190109', true );/*navigation実装のためファイルを読み込み*/
+
+
+	/*modal実装のためファイルを読み込み*/
+	wp_enqueue_script( 'modal', get_template_directory_uri() . '/js/vendor.js', array(), '20190109', true );/*modal実装のためファイルを読み込み*/
+	wp_enqueue_script( 'modaal', 'https://cdn.jsdelivr.net/modaal/0.3.1/dist/js/modaal.min.js', array('jquery'), '20190115', false);/*modaal用のjsファイル*/
+	wp_enqueue_style( 'modalcss', 'https://cdn.jsdelivr.net/modaal/0.3.1/css/modaal.min.css');
+
+	/*tabのjsファイル*/
+	wp_enqueue_script( 'service-tab', get_template_directory_uri() . '/js/name-tab.js', array('jquery'), '20190115', false );/*tabのjsファイル*/
+
+	/*footer-nav mouseover時show()の　jsファイル*/
+	wp_enqueue_script( 'nav-show', get_template_directory_uri() . '/js/nav-show.js', array('jquery'), '20190120', false );/*nav-showのjsファイル*/
+
+	/*dropdownのjsファイル*/
+	wp_enqueue_script('jquery-dropdown', '//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '1.12.4', false);/*dropdown web読み込み*/
+	wp_enqueue_script( 'dropdown', get_template_directory_uri() . '/js/dropdown.js', array('jquery'), '20190120', false );/*dropdownのjsファイル*/
+
+
 
 
 	if ( has_nav_menu( 'menu-1' ) ) {
@@ -245,13 +264,6 @@ function twentynineteen_scripts() {
 		wp_enqueue_script( 'scrollMagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js', array('jquery'), '20151215', true );/*ふわっと浮き出るanimation用のjquery*/
 
 		wp_enqueue_script('jquery-tweenmax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js', array('jquery'), '2.0.2', true);/*tweenmax web読み込み*/
-
-		/*modaal用のjsファイル*/
-		wp_enqueue_script( 'modaal', 'https://cdn.jsdelivr.net/modaal/0.3.1/dist/js/modaal.min.js', array('jquery'), '20190115', false);/*modaal用のjsファイル*/
-
-		/*tabのjsファイル*/
-		wp_enqueue_script( 'service-tab', get_template_directory_uri() . '/js/name-tab.js', array('jquery'), '20190115', false );/*tabのjsファイル*/
-
 
 		/*slickを読み込み部分*/
 //		wp_deregister_script('jquery');

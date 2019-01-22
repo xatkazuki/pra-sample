@@ -46,7 +46,218 @@ get_header();
 
 			<div>
 
+				<h3>nav</h3>
+
+				<div class="nav-Header-1">
+
+					control-by-position & opacity
+
+				<nav id="site-navigation" class="sw-Navigation position-relative main-navigation" role="navigation">
+
+					<button class="menu-toggle menu-toggle-1" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'xearts-official' ); ?>
+						<i></i>
+						<i></i>
+						<i></i>
+						<span class="text-closed">MENU</span>
+						<span class="text-opened">CLOSE</span>
+
+					</button>
+					<ul class="sw-Navigation_List-control-by-position">
+						<li class="sw-Navigation_Item"><a href="#dummy">step1</a></li>
+						<li class="sw-Navigation_Item"><a href="#dummy">step2</a></li>
+						<li class="sw-Navigation_Item"><a href="#dummy">step3</a></li>
+						<li class="sw-Navigation_Item"><a href="#dummy">step4</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+				<script>
+					jQuery(function($) {
+						"use strict";
+
+						function setUpSpToggleMenu() {
+							var $header = $('.nav-Header-1');
+							var $toggle = $('.menu-toggle-1');
+
+							$toggle.click(function(e){
+								e.preventDefault();
+								if ($header.hasClass('sw-Header-Open')) {
+									$header.removeClass('sw-Header-Open');
+									$header.removeClass('toggled');
+//								}else if($header.hasClass('toggled')) {
+
+								}else {
+									$header.addClass('sw-Header-Open');
+									$header.addClass('toggled');
+
+								}
+							})
+						}
+
+						setUpSpToggleMenu();
+					});
+				</script>
+
+
+				<div  style="margin-top: 30px;" class="nav-Header-2">
+
+					control-by-display
+
+					<nav id="site-navigation" class="sw-Navigation position-relative main-navigation" role="navigation">
+
+						<button class="menu-toggle menu-toggle-2" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'xearts-official' ); ?>
+							<i></i>
+							<i></i>
+							<i></i>
+							<span class="text-closed">MENU</span>
+							<span class="text-opened">CLOSE</span>
+
+						</button>
+						<ul class="sw-Navigation_List-control-by-display">
+							<li class="sw-Navigation_Item"><a href="#dummy">step1</a></li>
+							<li class="sw-Navigation_Item"><a href="#dummy">step2</a></li>
+							<li class="sw-Navigation_Item"><a href="#dummy">step3</a></li>
+							<li class="sw-Navigation_Item"><a href="#dummy">step4</a></li>
+						</ul>
+					</nav>
+
+				</div>
+
+	<script>
+				jQuery(function($) {
+				"use strict";
+
+				function setUpSpToggleMenu() {
+				var $header = $('.nav-Header-2');
+				var $toggle = $('.menu-toggle-2');
+
+				$toggle.click(function(e){
+				e.preventDefault();
+				if ($header.hasClass('sw-Header-Open-display')) {
+					$header.removeClass('sw-Header-Open-display');
+					$header.removeClass('toggled');
+
+					} else {
+					$header.addClass('sw-Header-Open-display');
+					$header.addClass('toggled');
+
+				}
+				})
+				}
+
+				setUpSpToggleMenu();
+				});
+	</script>
+
+				<div style="margin-top: 30px;" class="nav-Header-3">
+
+					control-by-slidein
+
+					<nav id="site-navigation" class="sw-Navigation position-relative main-navigation" role="navigation">
+
+						<button class="menu-toggle menu-toggle-3" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'xearts-official' ); ?>
+							<i></i>
+							<i></i>
+							<i></i>
+							<span class="text-closed">MENU</span>
+							<span class="text-opened">CLOSE</span>
+
+						</button>
+						<ul class="sw-Navigation_List-control-by-slidein">
+							<li class="sw-Navigation_Item"><a href="#dummy">step1</a></li>
+							<li class="sw-Navigation_Item"><a href="#dummy">step2</a></li>
+							<li class="sw-Navigation_Item"><a href="#dummy">step3</a></li>
+							<li class="sw-Navigation_Item"><a href="#dummy">step4</a></li>
+						</ul>
+					</nav>
+
+				</div>
+
+				<script>
+					jQuery(function($) {
+						"use strict";
+
+						function setUpSpToggleMenu() {
+							var $header = $('.nav-Header-3');
+							var $toggle = $('.menu-toggle-3');
+
+							$toggle.click(function(e){
+								e.preventDefault();
+								if ($header.hasClass('sw-Header-Open-slidein')) {
+									$header.removeClass('sw-Header-Open-slidein');
+								} else {
+									$header.addClass('sw-Header-Open-slidein');
+								}
+							})
+						}
+
+						setUpSpToggleMenu();
+					});
+				</script>
+
+
+				<div style="margin-top: 30px;" class="nav-Header-4">
+
+					control-by-modal
+
+					<nav id="site-navigation" class="sw-Navigation position-relative main-navigation" role="navigation">
+					<button class="recommend-Anchor modaal menu-toggle menu-toggle-4" aria-controls="primary-menu" aria-expanded="false" href="#modal-nav"
+						 data-modaal-custom-class="modal-nav"
+						 data-modaal-width="350">
+							<i></i>
+							<i></i>
+							<i></i>
+							<span class="text-closed">MENU</span>
+							<span class="text-opened">CLOSE</span>
+
+					</button>
+					<ul id="modal-nav" class="modal-Template sw-Navigation_List-control-by-modal">
+<!--							<ul class="sw-Navigation_List-control-by-modal">-->
+								<li class="sw-Navigation_Item"><a href="#dummy">step1</a></li>
+								<li class="sw-Navigation_Item"><a href="#dummy">step2</a></li>
+								<li class="sw-Navigation_Item"><a href="#dummy">step3</a></li>
+								<li class="sw-Navigation_Item"><a href="#dummy">step4</a></li>
+<!--							</ul>-->
+					</ul><!--モダール表示　ここまで-->
+
+					</nav>
+
+					<script>
+						jQuery(function($) {
+							"use strict";
+
+							function setUpSpToggleMenu() {
+								var $header = $('.nav-Header-4');
+								var $toggle = $('.menu-toggle-4');
+
+								$toggle.click(function(e){
+									e.preventDefault();
+									if ($header.hasClass('sw-Header-Open-modal')) {
+										$header.removeClass('sw-Header-Open-modal');
+										$header.removeClass('toggled');
+//								}else if($header.hasClass('toggled')) {
+
+									}else {
+										$header.addClass('sw-Header-Open-modal');
+//										$header.addClass('toggled');
+
+									}
+								})
+							}
+
+							setUpSpToggleMenu();
+						});
+					</script>
+
+				</div>
+
+				<hr>
+
 				<h3 id="top" class="namespace-block">	コンテンツ１- プルダウン-</h3>
+
+				<!-- 自作のjsファイルと外部ファイルを読み込み -->
+
 				<div>
 					<ul class="dropdown">
 						<li><a href="#">テキスト1</a></li>
@@ -170,7 +381,7 @@ get_header();
 					<h3>コンテンツ５ -ふわっと浮き出る - </h3>
 
 					<!--
-						function.phpでjQueryを読み込み、javascriptを作成
+						function.phpでjQuery(ScrollMagic)を読み込み、javascriptを作成
 					　-->
 
 					<p class="">本文4、本文4、本文4、本文4、本文4、本文4、</p>
@@ -208,7 +419,6 @@ get_header();
 					<!--
 						参考：http://bashalog.c-brains.jp/17/02/28-103000.php
 								 https://on-ze.com/archives/6971
-								 2つのファイルを読み込みして実装
 								 <link rel="stylesheet" href="//cdn.jsdelivr.net/modaal/0.3.1/css/modaal.min.css">
 								 <script src="//cdn.jsdelivr.net/modaal/0.3.1/dist/js/modaal.min.js">
 					 -->
@@ -227,21 +437,21 @@ get_header();
 						モーダル表示（売るなら今です）
 					</a>
 					<div id="modal-Recommend" class="modal-Template">
-						<div class="modal-Recommend_Header">
-							<p class="modal-Recommend_HeaderText">売るなら今です！</p>
+						<div>
+							<p class="">売るなら今です！</p>
 						</div>
 
-						<div class="modal-Recommend_Content">
-							<p class="modal-Recommend_Text modal-Recommend_Text-1">
+						<div class="">
+							<p class="">
 								商品の価格は、発売後、<br>
 								毎週値下がりしてしまいます。<br>
 								今が最高値の可能性が高いです。<br>
-								<span class="modal-Recommend_Text-emphasis">売るなら今です！</span><br>
+								<span class="">売るなら今です！</span><br>
 							</p>
-							<p class="modal-Recommend_Text modal-Recommend_Text-2">ぜひこのまま<br>買取お申し込みにお進みください。</p>
+							<p class="">ぜひこのまま<br>買取お申し込みにお進みください。</p>
 						</div>
 
-						<div class="form-Submit modal-Recommend_Submit">
+						<div class="">
 							<button type="submit" class="btn btn-block form-Button">
 								<i class="fas fa-chevron-circle-left form-Button_Icon form-Button_Icon-prev"></i>
 								申込に戻る
@@ -373,7 +583,7 @@ get_header();
 								return false;
 							});
 						});
-//					</script>
+					</script>
 
 					<ul>
 						<li class="underLine-animation">
@@ -397,7 +607,7 @@ get_header();
 
 				<hr>
 
-				タブ
+				<h3 id="tab">タブ</h3>
 
 				<ul class="service-Tab js_tab">
 					<li class="js_tab1 js_tab_color js_tab_current_color">タブ１ Well hello there</li>
@@ -414,8 +624,7 @@ get_header();
 
 				<hr>
 
-				hover時にtrancelateの動きをcssで実装
-
+				<h3 id="hover">hover時にtrancelateの動きをcssで実装</h3>
 
 				<div class="hover-Trance-parent">
 
@@ -453,20 +662,21 @@ get_header();
 
 				<hr>
 
-				<div class="box green"></div>
-				<div class="box orange"></div>
-				<div class="box grey"></div>
-				<div class="box pink"></div>
+				<h3 id="tween">jQueryTweenでtrancelate</h3>
 
-				<div class="animArea">
-					<div class="animItem" id="anim"></div>
+				<div class="tween-box box green"></div>
+				<div class="tween-box box orange"></div>
+				<div class="tween-box box grey"></div>
+				<div class="tween-box box pink"></div>
+
+				<div class="tween-animArea">
+					<div class="tween-animItem" id="anim"></div>
 				</div>
 				<p><button id="start" class="btn btn-info">アニメーション実行</button></p>
 
 				<a href="https://greensock.com/get-started-js" style="display: block;"><small>greensock.com --orginalDoc--</small></a>
 				<a href="https://lab.sonicmoov.com/markup/animation-library-tweenmaxjs/" style="display: block;"><small>使い方の例 -- ブログ--</small></a>
 				<a href="https://createkt.com/scrollmagic/"><small>応用（参考程度）</small></a>
-
 
 				<script>
 
@@ -489,16 +699,66 @@ get_header();
 
 				</script>
 
+				<hr>
+
+<!--				<div class="">-->
+					<figure class="trance-parent">
+						<img class="transform-translateX" src="<?php bloginfo('template_directory');?>/images/board-640.jpg" width="300" height="205">
+					</figure>
+
+					<figure class="trance-parent">
+						<img class="transform-translateZ" src="<?php bloginfo('template_directory');?>/images/dance-640.jpg" width="300" height="205">
+					</figure>
+
+					<div class="trance-parent">
+					<figure class="">
+						<img class="transform-translateXYZ" src="<?php bloginfo('template_directory');?>/images/laptop-640.jpg" width="300" height="205">
+					</figure>
+
+						<figure class="">
+							<img class="trance-delay transform-translateX" src="<?php bloginfo('template_directory');?>/images/pencil-640.jpg" width="300" height="205">
+						</figure>
+				</div>
+
+
+					<figure class="trance-parent">
+						<img class="transform-transrotateZ" src="<?php bloginfo('template_directory');?>/images/tea-plantation-640.jpg" width="300" height="205">
+					</figure>
+
+				<div class="trance-parent">
+
+					<figure>
+						<img class="transform-transrotateXYZ" src="<?php bloginfo('template_directory');?>/images/walk-640.jpg" width="300" height="205">
+					</figure>
+
+
+					<figure>
+						<img class="trance-delay transform-arrange" src="<?php bloginfo('template_directory');?>/images/dance-640.jpg" width="300" height="205">
+					</figure>
+				</div>
+
 			</div>
 
 			<footer>
-			<button id="fadeInFix_AnchorTopButton">
-				<a href="#anchor-pagetop">
 
-<!--					<img src="--><?php //bloginfo('template_directory'); ?><!--/images/common/page-top.png" alt=""><br>-->
-					ページTOPへ
-				</a>
-			</button>
+				<!-- 自作のjsファイルを読み込み -->
+
+				<div class="footer-button">
+
+					<ul class="footer-nav">
+						<li><a href="#tab">タブ</a></li>
+						<li><a href="#hover">hover</a></li>
+						<li><a href="#tween">tween</a></li>
+						<li>step4</li>
+					</ul>
+					<button id="fadeInFix_AnchorTopButton">
+						<a href="#anchor-pagetop">
+
+		<!--					<img src="--><?php //bloginfo('template_directory'); ?><!--/images/common/page-top.png" alt=""><br>-->
+							ページTOPへ
+						</a>
+					</button>
+				</div>
 			</footer>
 
 
