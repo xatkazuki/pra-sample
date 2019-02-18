@@ -3621,11 +3621,12 @@ svg {
       display: block; } }
   @media (max-width: 575.98px) {
     .sw-Header-Open-slidein .sw-Navigation_List-control-by-slidein {
-      right: 0;
+      right: 0px;
       opacity: 0.7;
       display: block;
       background: black;
-      transition: 0.5s all ease-in; } }
+      transform: translateX(-640px);
+      transition: 0.5s ease-in; } }
 
 .sw-Navigation_List-control-by-modal {
   display: flex;
@@ -3714,7 +3715,7 @@ svg {
       display: block !important;
       background-color: transparent;
       position: absolute;
-      top: 310px;
+      top: 0px;
       left: 10px;
       z-index: 10;
       border: none;
@@ -3749,15 +3750,12 @@ svg {
         display: none; } }
 
 .menu-toggle-2 {
-  top: 380px;
   left: 10px; }
 
 .menu-toggle-3 {
-  top: 450px;
   left: 10px; }
 
 .menu-toggle-4 {
-  top: 520px;
   left: 10px; }
 
 @media (max-width: 575.98px) {

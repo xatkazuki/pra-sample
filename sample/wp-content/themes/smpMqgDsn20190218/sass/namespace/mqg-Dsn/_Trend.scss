@@ -1,0 +1,28 @@
+.mqg-Trend_List{
+  max-width: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: flex-start;
+  height: 1000px;
+}
+
+.mqg-Trend_ListItem{
+  width: 350px;
+  &:hover{
+
+    //&:hover.mqg-Trend_ListItem p {
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      transform: scaleY(1.4);
+      transition: 0.7s;
+    //}
+}
+}
+
+.mqg-Trend_ListItem-alignEnd{
+  align-self: flex-end;
+
+}

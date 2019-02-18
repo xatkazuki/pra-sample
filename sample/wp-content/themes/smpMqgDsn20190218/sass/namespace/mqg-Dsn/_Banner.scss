@@ -1,0 +1,21 @@
+.mqg-Banner{
+  background-color: #000;
+}
+.mqg-Banner_List{
+  max-width: 1080px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.mqg-Banner_Item{
+  width: 350px;
+
+}
+.mqg-Banner_CopyPhrase{
+@include font-size(26 / 16);
+  color: #ffffff;
+
+}
+.mqg-Banner_Title{
+  //color: #ffffff;
+}

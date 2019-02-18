@@ -44,6 +44,52 @@ get_header();
 				?>
 			</header><!-- .entry-header -->
 
+
+			<div>
+
+				<div class="spacer s2"></div>
+				<div id="trigger1">scroll-trans</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+				<div id="pin1" style="position: fixed; top: 300px; left: 0; background-color: rgba(255,167,57,0.2);">
+					<p>Stay where you are.</p>
+					<a href="#" class="viewsource"> (at least for a while)</a>
+				</div>
+				<br>
+				<div class="spacer s2"></div>
+				<script>
+
+					$(function() {
+
+						var w = $(window).width();
+						if (w > 768) {
+							var Pin = $('#pin1');
+
+							$(window).scroll(function () {
+								if ($(this).scrollTop() <= 800) {
+//									Pin.fadeOut();
+									Pin.css({
+										'position':'fixed',
+										'top':300
+//										'width':'100%',
+									});
+								}else if ($(this).scrollTop() > 800){
+									Pin.css({
+										'position':'absolute',
+										'top':1100
+//										'width':'100%',
+									});
+								}
+							});
+						}
+					});
+			</script>
+			</div>
+
 			<div>
 
 				<h3>nav</h3>
@@ -100,7 +146,7 @@ get_header();
 				</script>
 
 
-				<div  style="margin-top: 30px;" class="nav-Header-2">
+				<div  style="margin-top: 45px;" class="nav-Header-2">
 
 					control-by-display
 
@@ -150,7 +196,7 @@ get_header();
 				});
 	</script>
 
-				<div style="margin-top: 30px;" class="nav-Header-3">
+				<div style="margin-top: 45px;" class="nav-Header-3">
 
 					control-by-slidein
 
@@ -197,7 +243,7 @@ get_header();
 				</script>
 
 
-				<div style="margin-top: 30px;" class="nav-Header-4">
+				<div style="margin-top: 45px;" class="nav-Header-4">
 
 					control-by-modal
 
@@ -252,7 +298,7 @@ get_header();
 
 				</div>
 
-				<hr>
+				<hr style="margin-top: 70px;">
 
 				<h3 id="top" class="namespace-block">	コンテンツ１- プルダウン-</h3>
 
@@ -284,7 +330,9 @@ get_header();
 
 				<div id="textslide" class="namespace-block">
 					<h3>コンテンツ2 -横からのスライド -<i class="fa fa-angle-up" aria-hidden="true"></i></h3>
+
 					<!--  cssのみでanimationを実装　-->
+
 					<p class="text-slide_FromRight">
 						本文２、本文２、本文２、本文２、本文２、本文２<br>
 						本文２、本文２、本文２、本文２、本文２、本文２<br>
@@ -570,6 +618,8 @@ get_header();
 
 					スマートスクロール
 
+					<!-- jsで実装 -->
+
 					<script>
 						$(function(){
 							// #で始まるリンクをクリックしたら実行されます
@@ -608,6 +658,8 @@ get_header();
 				<hr>
 
 				<h3 id="tab">タブ</h3>
+
+				<!-- function.php で jsファイルを読み込み -->
 
 				<ul class="service-Tab js_tab">
 					<li class="js_tab1 js_tab_color js_tab_current_color">タブ１ Well hello there</li>
@@ -663,6 +715,8 @@ get_header();
 				<hr>
 
 				<h3 id="tween">jQueryTweenでtrancelate</h3>
+
+				<!-- function.php で読み込みをして、カスタマイズ -->
 
 				<div class="tween-box box green"></div>
 				<div class="tween-box box orange"></div>
@@ -739,9 +793,14 @@ get_header();
 
 			</div>
 
+
+
 			<footer>
 
-				<!-- 自作のjsファイルを読み込み -->
+				<!--
+  				<script>で動きを記述して、フッターmenuをfade-in表示
+				  *function.php で 読み込みをしているjsファイル(nav-show.js)はmouseover時の動き
+				 -->
 
 				<div class="footer-button">
 
