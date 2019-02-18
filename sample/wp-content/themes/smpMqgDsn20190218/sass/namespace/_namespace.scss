@@ -1,0 +1,101 @@
+@import "dropdown";
+@import "fullscrollAnimate";
+@import "accordion";
+@import "arrow";
+@import "slick";
+@import "textslide";
+@import "modal";
+@import "fadeInFix";
+@import "underLine";
+@import "tab";
+@import "hover";
+@import "tween";
+@import "nav";
+
+
+@import "mqg-Dsn/mqg";
+
+//js用のscss
+@import "js/slick";
+@import "js/slick-theme";
+
+
+//block
+.namespace-block{
+  max-width: 1020px;
+  min-width: 787px;
+  margin: 0 auto;
+}
+
+.namespace-Main{
+  max-width: 1280px;
+  min-width: 1020px;
+  margin: 0 auto;
+  //background-color: #00a0d2;
+}
+
+.namespace-Main-cstomLyout{
+  position: relative;
+  //overflow: hidden;
+  word-break: break-all;
+
+}
+
+.trance-parent:hover{
+  .transform-translateX{
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    transition: 0.7s ease-in;
+  }
+}
+
+.transform-translateZ{
+  transform:rotateX(45deg);
+}
+.trance-parent:hover .transform-translateZ{
+  -webkit-transform: translateZ(100px);
+  transform: translateZ(100px);
+  transition: 0.7s ease-in;
+}
+
+
+.transform-translateXYZ{
+  transform:rotateX(90deg);
+}
+
+.trance-parent:hover .transform-translateXYZ{
+  -webkit-transform: translate3d(400px,50px,200px);
+  transform: translate3d(100px,50px,200px);
+  transition: 0.7s ease-in;
+}
+
+.transform-transrotateZ{
+  transform:rotateX(45deg);
+}
+.trance-parent:hover .transform-transrotateZ{
+  -webkit-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+  transition: 0.7s ease-in;
+}
+
+
+.transform-transrotateXYZ{
+  transform:rotateX(90deg);
+}
+
+.trance-parent:hover {
+  .transform-transrotateXYZ{
+    -webkit-transform: rotate3d(10,10,200,45deg);
+    transform: rotate3d(10,10,10,45deg) translateX(100px);
+    transition: 0.3s ease-in;
+  }
+
+  .transform-arrange{
+    transform: rotate3d(10,10,10,45deg) translate(300px, 200px) scale(0.5);
+    transition: 0.9s ease-in;
+  }
+}
+.trance-parent:hover .trance-delay{
+  transition-delay: 0.5s;
+
+}

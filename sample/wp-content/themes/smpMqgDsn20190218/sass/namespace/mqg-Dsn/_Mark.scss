@@ -1,0 +1,21 @@
+.mqg-Mark_New{}
+.mqg-Mark_New-beautyItem{
+  @include font-size(24 / 16);
+}
+
+.mqg-Mark_New-trendItem{
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: bold;
+  @include font-size(11 / 16);
+  color: #ffffff;
+}
+
+.mqg-Mark_New-bgRed{
+  background-color: red;
+
+}
+.mqg-Mark_bgBlack{
+  background-color: #000;
+
+}

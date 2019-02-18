@@ -63,7 +63,9 @@
       opacity: 0.7;
       display: block;
       background: rgba(0, 0, 0, 1.0);
-      transition: 0.5s all ease-in;
+      //transition: 0.5s all ease;
+      transform: translateX(-640px);
+      transition: 0.5s ease-in;
     }
   }
 }
@@ -186,7 +188,7 @@
     background-color: transparent;
     position: absolute;
     //top: 10px;
-    top: 310px;
+    top: 0px;
     //right: 10px;
     left: 10px;
     z-index: 10;
@@ -235,17 +237,17 @@
 }
 
 .menu-toggle-2{
-  top: 380px;
+  //top: 380px;
   left: 10px;
 }
 
 .menu-toggle-3{
-  top: 450px;
+  //top: 450px;
   left: 10px;
 }
 
 .menu-toggle-4{
-  top: 520px;
+  //top: 520px;
   left: 10px;
 }
 

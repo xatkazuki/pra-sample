@@ -1,0 +1,18 @@
+.mqg-Section_Title{
+  @include font-size(44 / 22);
+  font-family: "M-font", sans-serif !important;
+}
+.mqg-Section_Title-seasonalItem{
+  position: relative;
+  right: 30px;
+  top: 0;
+}
+.mqg-Section_SubTitle{
+  display: inline-block;
+  color: red;
+}
+
+.mqg-Section_SubTitle-seasonalItem{
+  padding: 0 0 0 60px;
+
+}

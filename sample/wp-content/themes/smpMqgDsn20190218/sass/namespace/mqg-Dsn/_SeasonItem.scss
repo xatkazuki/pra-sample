@@ -1,0 +1,26 @@
+.mqg-SeasonItem{
+  position: relative;
+  @include clearfix();
+  width: 100%;
+}
+
+.mqg-SeasonItem_Img{
+  position: relative;
+  z-index: -1;
+  width: 980px;
+  img{
+
+  }
+}
+
+.mqg-SeasonItem_Body{
+  position: absolute;
+  right: 200px;
+  top: 100px;
+  z-index: 30;
+  width: 350px;
+  float: right;
+  padding: 20px 40px;
+  background-color: #ffffff;
+
+}

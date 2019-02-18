@@ -1,0 +1,31 @@
+.mqg-Hero{
+  position: relative;
+}
+.mqg-Hero_ListItem{
+  max-width: 1600px;
+  .mqg-Hero_BgImg{
+    max-width: 980px;
+    margin: 0 0 0 440px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.mqg-Hero_HotItem{
+  position: absolute;
+  top: 500px;
+  left: 250px;
+  width: 300px;
+  height: 400px;
+  background-color: #000;
+}
+
+.mqg-Hero_ItemName{
+  padding: 260px 0 0;
+  text-align: center;
+  color: #ffffff;
+}
+.mqg-Hero_ItemCategory{
+  display: block;
+}

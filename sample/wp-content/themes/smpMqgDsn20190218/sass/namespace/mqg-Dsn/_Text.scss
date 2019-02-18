@@ -1,0 +1,19 @@
+.mqg-Text{
+  @include font-size(14 /16);
+}
+.mqg-Text-sm{
+  @include font-size(11 /16);
+}
+.mqg-Text-red{
+  color: red;
+}
+.mqg-Text-white{
+  color: #ffffff;
+
+}
+
+.mqg-Text_Time-uniqu{
+  font-family: "Raleway", sans-serif;
+  color: #775f44;
+  letter-spacing: 0.25em;
+}

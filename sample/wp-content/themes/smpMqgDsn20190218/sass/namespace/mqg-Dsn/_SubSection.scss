@@ -1,0 +1,30 @@
+.mqg-SubSection_Title{
+  font-family: "TsukuMinPr6N-L{pm}", "YuMincho", "Yu Mincho", "Hiragino Mincho ProN", serif !important;
+
+}
+
+.mqg-SubSection_Inner{
+  @include clearfix();
+  width: 780px;
+  margin: 0 auto;
+
+}
+.mqg-SubSection_Inner-right{
+  float: right;
+
+}
+.mqg-SubSection_Inner-left{
+  float: left;
+
+}
+
+.mqg-SubSection_Body{
+  width: 350px;
+
+}
+
+.mqg-SubSection_Img{
+  width: 350px;
+  height: 350px;
+  background-color: silver;
+}

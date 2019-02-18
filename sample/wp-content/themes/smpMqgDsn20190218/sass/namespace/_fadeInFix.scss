@@ -1,0 +1,51 @@
+.footer-button{
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+
+.footer-nav{
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 0;
+  background-color: #00a0d2;
+  list-style-type: none;
+  li{
+    border-radius: 5px;
+    padding: 0.56rem 1.9rem;
+    background-color: #00a0d2;
+    &:hover{
+      background-color: #000;
+    }
+    a{
+      color: #ffffff;
+    }
+  }
+}
+
+#fadeInFix_AnchorTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  //@include media-query('sp'){
+  //  display: none;
+  //}
+}
+#fadeInFix_AnchorTopButton a {
+  //background: #666;
+  display: block;
+  width: 100px;
+  padding: 0 0;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  @include font-size(12 / 16);
+  border-radius: 5px;
+  //@include media-query('sp'){
+  //  display: none;
+  //}
+}
+#fadeInFix_AnchorTopButton a:hover {
+  text-decoration: none;
+  //background: #999;
+}
